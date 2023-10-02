@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sound Buzz Music Web Application">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="flex">
+    <aside class="flex flex-col items-center side-bar py-10 px-9" id="aside">
+        <a href="#showHome" class="nav-item"><img src="images/logo-soundbuzz.svg" alt="Logo of soundbuzz"></a>
+        <div class="side-bar-search mb-9 mt-5">
+            <img src="images/picto-recherche-menu.svg" alt="Search icon inside the search bar">
+            <input type="search" placeholder="Explorer" class="fs-12">
+        </div>
+        <img src="images/art-1.jpg" alt="Image of the user" class="side-bar-profile-img">
+        <h5 id="userName"></h5>
+        <a class="fs-12 side-bar-profile-drop-down" href="javascript:void(0)" id="popupLink">Mon profil <img
+                src="./images/arrow-down.svg" alt="Drop down arrow">
+        </a>
+        <div class="side-bar-popup" id="popup">
+            <div class="side-bar-popup-card" id="popupCard">
+                <label for="firstName">First Name</label>
+                <input type="text" placeholder="Edit first name" class="side-bar-popup-input" id="firstName">
+                <label for="firstName">Last Name</label>
+                <input type="text" placeholder="Edit last name" class="side-bar-popup-input" id="lastName">
+                <button id="popupSave">Save</button>
+                <button id="popupClose">Close</button>
+            </div>
+        </div>
+
+        <ul class="flex text-center side-bar-profile-count">
+            <li>
+                <h5 id="viewsCount"></h5>
+                <p>Views</p>
+            </li>
+            <li>
+                <h5 id="jaimesCount"></h5>
+                <p>Jaimes</p>
+            </li>
+            <li>
+                <h5 id="abonnesCount"></h5>
+                <p>Abonnes</p>
+            </li>
+        </ul>
+
+        <nav class="self-start" id="nav">
+            <h5 class="pt-9 pb-6">SOUNDBUZZ MUSIC</h5>
+            <a href="#showTendances" class="nav-item"><img src="images/picto-menu-talentsdumomments.svg"
+                    alt="Talent du moment's icon">
+                Talents du
+                moment</a>
+            <a href="#showBibliotheque" class="nav-item"><img src="images/picto-menu-biblio.svg"
+                    alt="Bibliotheque's icon">
+                Bibliotheques</a>
+            <a href="#showPagePlaylist" class="nav-item"><img src="images/picto-menu-playlist.svg"
+                    alt="Playlist's icon">
+                Playlists</a>
+            <a href="javascript:void(0)" class="nav-item"><img src="images/picto-menu-artiste.svg" alt="Artist's icon">
+                Artistes</a>
+            <h5 class="pt-9 pb-6">SOUNDBUZZ STUDIO</h5>
+            <a href="javascript:void(0)" class="nav-item"><img src="images/picto-menu-tamixactus.svg"
+                    alt="Mix actus's icon">
+                Mix
+                actus</a>
+            <a href="javascript:void(0)" class="nav-item"><img src="images/picto-menu-mescrea.svg"
+                    alt="Mes Creation's icon">
+                Mix
+                Creations</a>
+            <a href="javascript:void(0)" class="nav-item"><img src="images/picto-menu-studio.svg"
+                    alt="StudioMix's icon">
+                StudioMix</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <div class="main-bg-color-div"></div>
+        <div class="home hidden" id="showHome">
+            <section class="talents overflow-hidden pl-9 color-gray-lighter">
+                <h1 id="userName1"></h1>
+                <h2>Talents du moments</h2>
+                <ul class="flex slide-animation" id="talentCardList">
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 pt-9">
+                <h2>Playlists pour Daniel</h2>
+                <ul class="flex slide-animation" id="playlistList">
+                </ul>
+            </section>
+            <section class="recommendation pl-9 pt-9">
+                <h2>Récément écouté</h2>
+                <ul class="flex flex-wrap" id="recommendationList">
+                    <ul class="recommendation-list flex flex-wrap">
+                    </ul>
+                </ul>
+            </section>
+            <section class="artist overflow-hidden pl-9 pt-9">
+                <h2>Artist</h2>
+                <ul class="flex items-center slide-animation" id="artistList">
+                </ul>
+            </section>
+        </div>
+        <div class="bibliotheque hidden" id="showBibliotheque">
+            <section class="talents overflow-hidden pl-9 color-gray-lighter nav-item">
+                <h1><a class="mr-5 nav-item" href="#showHome"><svg fill="#fe5266" width="35px" height="35px"
+                            viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="48" fill="white" />
+                            <path
+                                d="M44.942,50.412l14.037-15.487c0.742-0.818,0.68-2.083-0.139-2.824c-0.817-0.742-2.083-0.679-2.824,0.139L40.784,49.044 c-0.409,0.451-0.565,1.038-0.493,1.598c-0.016,0.564,0.196,1.131,0.647,1.539L57.74,67.412c0.383,0.348,0.864,0.519,1.344,0.519 c0.545,0,1.087-0.222,1.482-0.657c0.741-0.818,0.68-2.083-0.139-2.824L44.942,50.412z" />
+                        </svg></a>Bibliothèque</h1>
+                <h2 id="userName2"></h2>
+                <ul class="add-items-list flex cursor-pointer">
+                    <li class="add-items flex items-center justify-center py-30 px-20 mr-5"><button><img
+                                src="images/add-items.svg" alt="Click on this button to add an item"></button></li>
+                    <li>
+                        <ul class="flex slide-animation" id="clonedPlaylistList">
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 pt-9">
+                <h2>Talents du moments</h2>
+                <ul class="add-items-list flex cursor-pointer">
+                    <li class="add-items flex items-center justify-center py-30 px-20 mr-5"><button><img
+                                src="images/add-items.svg" alt="Click on this button to add an item"></button></li>
+                    <li>
+                        <ul class="flex slide-animation" id="clonedTalentCardList">
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="recommendation pl-9 pt-9">
+                <h2>Récément écouté</h2>
+                <ul class="flex flex-wrap" id="clonedRecommendationList">
+                </ul>
+            </section>
+            <section class="mes-titres pl-10">
+                <h2>Mes titres</h2>
+                <table class="text-center pl-10">
+                    <thead>
+                        <tr>
+                            <th><button><img src="images/add-items.svg" alt="Add new items to the list"></button></th>
+                            <th>Titre <img src="images/arrow-down-fill.svg" alt="Titre-drop down arrow"
+                                    class="mes-titres-titre-img"></th>
+                            <th>Artiste</th>
+                            <th>Album</th>
+                            <th>Année</th>
+                            <th>Durée</th>
+                            <th class="text-right"><button><img src="images/delete-icon.svg"
+                                        alt="Delete an item fro the list"></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="titresBody" class="body-titres">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="tendances hidden" id="showTendances">
+            <h1 class="px-9"><a class="mr-5 nav-item" href="#showHome"><svg fill="#fe5266" width="35px" height="35px"
+                        viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="white" />
+                        <path
+                            d="M44.942,50.412l14.037-15.487c0.742-0.818,0.68-2.083-0.139-2.824c-0.817-0.742-2.083-0.679-2.824,0.139L40.784,49.044 c-0.409,0.451-0.565,1.038-0.493,1.598c-0.016,0.564,0.196,1.131,0.647,1.539L57.74,67.412c0.383,0.348,0.864,0.519,1.344,0.519 c0.545,0,1.087-0.222,1.482-0.657c0.741-0.818,0.68-2.083-0.139-2.824L44.942,50.412z" />
+                    </svg></a>Talents du moment</h1>
+            <section class="tendances-profile  mx-9">
+                <ul class="flex">
+                    <li class="py-6 px-20 tendances-profile-left-box">
+                        <h3 class="tendances-profile-h3" id="artistName">Jeanne Added
+                            <p class="font-normal">Abonné <span class="color-primary"> 2,9k</span></p>
+                        </h3>
+                        <h4 class="tendances-profile-h4" id="tendanesProfileGenre">Moon</h4>
+                        <ul class="flex gap-1">
+                            <li>
+                                <h6 class="font-normal" id="tendancesProfileAlbumCount">2 albums</h6>
+                            </li>
+                            <li>
+                                <h6 class="font-normal" id="tendancesProfilePublish">SoundaRecords</h6>
+                            </li>
+                            <li>
+                                <h6 class="font-normal" id="tendancesProfileYear">2018</h6>
+                            </li>
+                        </ul>
+                        <p id="tendancesProfileDescription">Jeune artiste, de nature créative, j’ai noyé mes sentiments,
+                            mes douleurs et mes bonheurs
+                            dans la musique. Comme une
+                            extension de mon coeur, elle retranscrit mes émotions.</p>
+                        <ul class="flex gap-1">
+                            <li class="tendances-profile-count"><img src="images/eye.svg"
+                                    alt="Eye icon for number of views" class="tendances-talent-count">
+                                <span id="tendancesProfileViews">302k</span>
+                            </li>
+                            <li class="tendances-profile-count"><img src="images/heart-stroke.svg"
+                                    alt="Heart icon for the number of likes"> <span
+                                    id="tendancesProfileLikes">302k</span></li>
+                            <li class="tendances-profile-count"><img src="images/message.svg"
+                                    alt="Message icon for the number of comments"> <span
+                                    id="tendancesProfileComments">302k</span> </li>
+                        </ul>
+                        <ul class="flex gap-1">
+                            <li><button class="btn" id="tendancesProfileButton1"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 16.36 2 13.25 2 9.5 2 6.42 4.42 4 7.5 4c1.74 0 3.41.81 4.5 2.09C14.09 4.81 15.76 4 17.5 4 20.58 4 23 6.42 23 9.5c0 3.75-3.4 6.86-8.55 10.54L12 21.35z"
+                                            stroke="#fe5266" fill="#fff" />
+                                    </svg>
+                                </button></li>
+                            <li><button class="btn" id="tendancesProfileButton2"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 16.36 2 13.25 2 9.5 2 6.42 4.42 4 7.5 4c1.74 0 3.41.81 4.5 2.09C14.09 4.81 15.76 4 17.5 4 20.58 4 23 6.42 23 9.5c0 3.75-3.4 6.86-8.55 10.54L12 21.35z"
+                                            stroke="#000" fill="#fff" />
+                                    </svg>
+                                </button></li>
+                            <li><button class="btn"><img src="images/add-playlist.svg"
+                                        alt="Add the album to your playlist icon"></button></li>
+                            <li>
+                                <button class="btn"><img src="images/download.svg"
+                                        alt="Download the artist's album"></button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tendances-profile-right-box"><img id="tendancesProfilePic" src="images/musician-1.png"
+                            alt="Picture of the artist" class="tendances-profile-img"></li>
+                </ul>
+                <h2 class="tendances-profile-rank" id="tendanesProfileId">1<sup class="fs-10">er</sup></h2>
+            </section>
+            <section class="tendances-talents overflow-hidden">
+                <ul class="flex slide-animation" id="clonedTalentCardListOne">
+                </ul>
+            </section>
+            <section class="tendences-talents-rest-list mx-9 mt-9  px-9" id="tendencesTalentsRest">
+            </section>
+        </div>
+        <div class="page-playlist hidden" id="showPagePlaylist">
+            <h1><a class="mr-5 pl-9 nav-item" href="#showHome"><svg fill="#fe5266" width="35px" height="35px"
+                        viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="white" />
+                        <path
+                            d="M44.942,50.412l14.037-15.487c0.742-0.818,0.68-2.083-0.139-2.824c-0.817-0.742-2.083-0.679-2.824,0.139L40.784,49.044 c-0.409,0.451-0.565,1.038-0.493,1.598c-0.016,0.564,0.196,1.131,0.647,1.539L57.74,67.412c0.383,0.348,0.864,0.519,1.344,0.519 c0.545,0,1.087-0.222,1.482-0.657c0.741-0.818,0.68-2.083-0.139-2.824L44.942,50.412z" />
+                    </svg></a>Playlists</h1>
+            <section class="playlist overflow-hidden pl-9 mb-9">
+                <h2 class="color-gray-lighter">Mes playlists</h2>
+                <ul class="flex slide-animation" id="myPlaylist">
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 mb-9">
+                <h2>Actualités</h2>
+                <ul class="flex slide-animation" id="actualitesPlaylist">
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 mb-9">
+                <h2>Mix populaires</h2>
+                <ul class="flex slide-animation" id="popularPlaylist">
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 mb-9">
+                <h2>Mix pour vous</h2>
+                <ul class="flex slide-animation" id="mixPlaylist">
+                </ul>
+            </section>
+            <section class="playlist overflow-hidden pl-9 mb-9">
+                <h2>Ambiances & Genres</h2>
+                <ul class="flex slide-animation" id="genrePlaylist">
+                </ul>
+            </section>
+        </div>
+        <section class="music-player" id="musicPlayer">
+            <progress max="100" value="50"></progress>
+            <img id="player-image" class="music-player-image" alt="image of the music-album">
+            <ul class="flex justify-between items-center">
+                <li>
+                    <h3 class="pb-1" id="song-artist"></h3>
+                    <h6 class="pb-1" id="song-name"></h6>
+                    <p class="pb-1" id="song-duration"></p>
+                </li>
+                <li>
+                    <button class="btn mr-1"><img src="images/repeat.svg" alt="repeat the same song icon"></button>
+                    <button class="btn mr-1"><img src="images/play-previous.svg"
+                            alt="play the previous song icon"></button>
+                    <button class="btn mr-1" id="player-play-button">
+                        <img src="images/play-button.png" alt="play the music button" id="player-play-img"></button>
+                    <audio id="myAudio"></audio>
+                    <button class="btn mr-1"><img src="images/play-next.svg" alt="play the next song"></button>
+                    <button class="btn mr-1"><img src="images/shuffle.svg" alt="shuffle the song list"></button>
+                </li>
+                <li>
+                    <button class="btn mr-1" id="player-volume-off"><img src="images/volume-off.svg"
+                            alt="turn off the volume"></button>
+                    <progress max="100" value="50" class="volume-progress mr-1"></progress>
+                    <button class="btn mr-1" id="player-volume-on"><img src="images/volume-on.svg"
+                            alt="turn on the volume"></button>
+                    <button class="btn mr-1"><img src="images/three-dots.svg" alt="More information about the song">
+                    </button>
+
+
+
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

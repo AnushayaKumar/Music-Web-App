@@ -1,0 +1,699 @@
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.self-start {
+  align-self: start;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 16px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 500;
+}
+
+.fs-p {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.color-gray-lighter {
+  color: #ffffff;
+}
+
+.color-primary {
+  color: #fe5266;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pb-1 {
+  padding-bottom: 4px;
+}
+
+.mr-1 {
+  margin-right: 4px;
+}
+
+.p-5 {
+  padding: 20px;
+}
+
+.pb-6 {
+  padding-bottom: 24px;
+}
+
+.py-6 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.pr-8 {
+  padding-right: 30px;
+}
+
+.pl-9 {
+  padding-left: 36px;
+}
+
+.pt-9 {
+  padding-top: 36px;
+}
+
+.px-9 {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.py-9 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.pl-10 {
+  padding-left: 40px;
+}
+
+.py-10 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.px-20 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.py-30 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.mr-5 {
+  margin-right: 20px;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.mt-9 {
+  margin-top: 36px;
+}
+
+.mx-9 {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.mr-20 {
+  margin-right: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tendences-talents-rest svg, .tendences-talents-rest, .tendances-profile-rank, .tendances-profile-h3 p, .tendances-profile, .add-items, .titres-item svg, .titres-item, .recommendation-item svg, .recommendation-item, .card-talents-heart, .btn, .side-bar {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tendances-profile-rank, .card-talents h2, .main-bg-color-div {
+  position: absolute;
+  inset: 0px auto auto 0px;
+}
+
+.main h1 {
+  margin: 35px 0 22px 0px;
+  color: #ffffff;
+}
+.main h2 {
+  padding-bottom: 18px;
+}
+
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-600px);
+  }
+}
+.slide-animation {
+  animation: slideAnimation 30s linear infinite;
+}
+.slide-animation:hover {
+  animation-play-state: paused;
+}
+
+/*This file contains resets, normalize, opinionated styling across browsers. */
+/* resetting all margin and padding*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add border box sizing in all browsers (opinionated). */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Removing text-decoration from anchor tags (opinionated). */
+a {
+  text-decoration: none;
+}
+
+/* Removing list styles (opinionated). */
+li {
+  list-style: none;
+}
+
+/* Removing all buton borders (opinionated) */
+button {
+  border: none;
+}
+
+/* Body is given the width of 1232px and margin auto in the horizontal axis. */
+body {
+  width: 1232px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p,
+a {
+  font-size: 14px;
+}
+
+.side-bar {
+  width: 300px;
+  height: fit-content;
+  position: sticky;
+  inset: 0px auto auto 0px;
+  background-color: #fafafa;
+}
+.side-bar-search {
+  width: 240px;
+  padding: 7px 18px;
+  background-color: #fefefe;
+}
+.side-bar-search img {
+  vertical-align: -6px;
+}
+.side-bar-search input {
+  margin-left: 12px;
+  outline: none;
+  border: none;
+}
+.side-bar-profile-img {
+  width: 74px;
+  height: 74px;
+  margin-bottom: 5px;
+  border-radius: 40px;
+}
+.side-bar-profile-drop-down {
+  margin: 3px 0 28px 0;
+  color: #fe5266;
+  font-weight: 700;
+}
+.side-bar-profile-drop-down img {
+  vertical-align: 2px;
+  margin-left: 3px;
+}
+.side-bar-profile-count li {
+  width: 100px;
+  padding: 0 25px;
+  border-right: 1px solid #fe5266;
+}
+.side-bar-profile-count li h5 {
+  word-wrap: break-word;
+}
+.side-bar-profile-count li:nth-last-child(1) {
+  border-right: none;
+}
+.side-bar-profile-count p {
+  color: #fe5266;
+  font-weight: 700;
+}
+.side-bar nav h5 {
+  color: #fe5266;
+}
+.side-bar nav a {
+  display: block;
+  padding-bottom: 22px;
+  color: #b9c1c6;
+}
+.side-bar nav .active {
+  color: #fe5266;
+}
+.side-bar nav img {
+  vertical-align: -4px;
+}
+.side-bar-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.side-bar-popup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.side-bar-popup-input {
+  padding: 10px 30px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.side-bar-popup button {
+  padding: 10px 30px;
+  background-color: #fe5266;
+  color: #ffffff;
+  float: right;
+  margin-right: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main {
+  width: 932px;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 100px;
+}
+.main-bg-color-div {
+  width: 932px;
+  height: 358px;
+  background-image: linear-gradient(72deg, #fe5266 3%, #fe5465 47%, #fd7f54);
+  z-index: -1;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.btn:hover {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-talents {
+  width: 233px;
+  height: 233px;
+  background: url(../../images/musician-2.jpeg) center/cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  position: relative;
+  color: #ffffff;
+}
+.card-talents-heart {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  inset: auto auto -15px 70px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.card-talents .black {
+  left: 120px;
+}
+.card-talents h2 {
+  background-color: #ffffff;
+  color: #fe5266;
+  padding: 5px 15px 10px 10px;
+  border-radius: 20px 0px 50px 0px;
+}
+.card-talents h4 {
+  margin-top: 150px;
+}
+.card-talents .star-btn {
+  position: absolute;
+  inset: 15px 15px auto auto;
+  background: none;
+}
+
+.card-playlist {
+  width: 485px;
+  height: 240px;
+  position: relative;
+  color: #ffffff;
+  background: url(../../images/playlist-bg1.jpeg) center/cover;
+  border-radius: 20px;
+}
+.card-playlist h2,
+.card-playlist div {
+  width: 222px;
+}
+.card-playlist h2 {
+  font-size: 50px;
+  border-right: 2px solid rgba(205, 205, 205, 0.3);
+}
+.card-playlist div {
+  padding-left: 50px;
+}
+.card-playlist svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  inset: 95px auto auto 217px;
+  border-radius: 50px;
+  border: 5px solid rgba(205, 205, 205, 0.6);
+  background-color: white;
+}
+
+.recommendation-item {
+  width: 400px;
+  height: 70px;
+  margin: 10px 20px 37px 20px;
+  padding: 5px 15px 9px 0px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  position: relative;
+}
+.recommendation-item-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  position: absolute;
+  inset: -10px auto auto -20px;
+}
+.recommendation-item-p {
+  padding: 3px 0;
+}
+.recommendation-item svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+.recommendation-item svg:hover {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.artist-item {
+  margin: 0 77px 25px 0;
+}
+.artist-item img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+}
+
+.titres-item {
+  position: relative;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.titres-item img {
+  position: absolute;
+  inset: -15px auto auto -20px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50px;
+}
+.titres-item svg {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.add-items {
+  width: 165px;
+  height: 240px;
+  position: sticky;
+  inset: 0 auto auto -50px;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.add-items button {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+}
+
+.mes-titres-titre-img {
+  vertical-align: middle;
+}
+.mes-titres h2 {
+  padding-bottom: 0;
+}
+.mes-titres table {
+  margin: 0px 10px;
+  border-collapse: separate;
+  border-spacing: 0px 40px;
+}
+.mes-titres table td,
+.mes-titres table th {
+  padding: 12px 20px;
+}
+.mes-titres table th:first-child {
+  padding-right: 30px;
+}
+.mes-titres table th {
+  border-bottom: 1px solid #b9c1c6;
+  font-size: 16px;
+}
+.mes-titres table th button {
+  background: none;
+}
+.mes-titres table th button img {
+  width: 15px;
+  height: 15px;
+}
+
+.tendances-profile {
+  width: 860px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 36px;
+}
+.tendances-profile-right-box {
+  width: 300px;
+  height: auto;
+}
+.tendances-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 20px 20px 0;
+}
+.tendances-profile-h3 {
+  font-size: 32px;
+}
+.tendances-profile-h3 p {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 20px;
+  vertical-align: 6px;
+  margin-left: 20px;
+  letter-spacing: 0.4px;
+}
+.tendances-profile-h4 {
+  font-size: 25px;
+}
+.tendances-profile-left-box {
+  width: 600px;
+  height: auto;
+}
+.tendances-profile-left-box ul {
+  padding: 7px 0;
+}
+.tendances-profile-count {
+  font-size: 14px;
+  color: #fe5266;
+}
+.tendances-profile-count img {
+  width: 14px;
+  height: 15px;
+  vertical-align: -2px;
+}
+.tendances-profile-rank {
+  background-color: #ffffff;
+  color: #fe5266;
+  padding: 10px 20px 15px 15px;
+  border-radius: 20px 0px 50px 0px;
+}
+
+.tendences-talents-rest {
+  border-radius: 6px;
+  position: relative;
+  font-size: 13px;
+  padding: 10px;
+}
+.tendences-talents-rest-profile {
+  position: absolute;
+  inset: -7px auto auto -30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.tendences-talents-rest li {
+  padding: 0 10px;
+}
+.tendences-talents-rest h2 {
+  padding-bottom: 0;
+}
+.tendences-talents-rest-views {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.tendences-talents-rest svg {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.music-player {
+  position: fixed;
+  inset: auto 0 0 auto;
+  width: 932px;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 3;
+  padding-bottom: 10px;
+}
+.music-player ul {
+  padding-right: 40px;
+}
+.music-player progress {
+  width: 932px;
+  height: 3px;
+  vertical-align: top;
+  border: none;
+}
+.music-player .volume-progress {
+  width: 80px;
+  height: 3px;
+  vertical-align: 10px;
+}
+.music-player progress::-webkit-progress-bar {
+  background-color: #b9c1c6;
+}
+.music-player progress::-webkit-progress-value {
+  background-color: #fe5266;
+}
+.music-player h2 {
+  padding-bottom: 0;
+}
+.music-player .btn img {
+  width: 25px;
+  height: 25px;
+}
+.music-player-image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 0 20px 0 40px;
+  border-radius: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */

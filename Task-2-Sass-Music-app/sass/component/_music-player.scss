@@ -1,0 +1,48 @@
+.music-player {
+    @include position(fixed, $b: 0, $r: 0);
+    @include size(932px);
+    // @extend %box-shadow;
+    background-color: $gray-lighter;
+    z-index: 3;
+    padding-bottom: 10px;
+
+
+    ul {
+        padding-right: 40px;
+    }
+
+    progress {
+        @include size(932px, 3px);
+        vertical-align: top;
+        border: none;
+    }
+
+    .volume-progress {
+        @include size(80px, 3px);
+        vertical-align: 10px;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: $gray-dark;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: $primary;
+    }
+
+    h2 {
+        padding-bottom: 0;
+    }
+
+    .btn img {
+        @include size(25px, 25px);
+    }
+
+    &-image {
+        float: left;
+        @include size(75px, 75px);
+        margin: 0 20px 0 40px;
+        border-radius: 40px;
+    }
+
+}

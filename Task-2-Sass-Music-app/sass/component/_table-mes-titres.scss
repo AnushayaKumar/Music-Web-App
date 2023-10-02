@@ -1,0 +1,42 @@
+.mes-titres {
+    &-titre-img {
+        vertical-align: middle;
+    }
+
+    h2 {
+        padding-bottom: 0;
+    }
+
+    table {
+        margin: 0px 10px;
+        border-collapse: separate;
+        border-spacing: 0px 40px;
+
+        td,
+        th {
+            padding: 12px 20px;
+        }
+
+        th:first-child {
+            padding-right: 30px;
+        }
+
+        th {
+            border-bottom: 1px solid $gray-dark;
+            font-size: $fs-h6;
+
+            button {
+                background: none;
+
+
+                img {
+                    @include size(15px, 15px);
+                }
+            }
+        }
+
+
+    }
+
+
+}

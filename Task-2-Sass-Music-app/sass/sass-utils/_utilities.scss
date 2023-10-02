@@ -1,0 +1,185 @@
+// Utility classes
+// flex
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.self-start {
+    align-self: start;
+}
+
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 16px;
+}
+
+
+// overflow
+.overflow-hidden {
+    overflow: hidden;
+}
+
+// typography
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.font-bold {
+    font-weight: $font-bold;
+}
+
+.font-normal {
+    font-weight: $font-normal;
+}
+
+.fs-p {
+    font-size: $fs-p;
+}
+
+.fs-12 {
+    font-size: $fs-12;
+}
+
+.fs-10 {
+    font-size: $fs-10;
+}
+
+.color-gray-lighter {
+    color: $gray-lighter;
+}
+
+.color-primary {
+    color: $primary;
+}
+
+// cursor - pointer
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// padding
+.pb-1 {
+    padding-bottom: 4px;
+}
+
+.mr-1 {
+    margin-right: 4px;
+}
+
+.p-5 {
+    padding: 20px;
+}
+
+.pb-6 {
+    padding-bottom: 24px;
+}
+
+.py-6 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.pr-8 {
+    padding-right: 30px;
+}
+
+.pl-9 {
+    padding-left: 36px;
+}
+
+.pt-9 {
+    padding-top: 36px;
+}
+
+.px-9 {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.py-9 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.pl-10 {
+    padding-left: 40px;
+}
+
+.py-10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.px-20 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.py-30 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+//  margin
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mt-9 {
+    margin-top: 36px;
+}
+
+.mx-9 {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.mb-9 {
+    margin-bottom: 36px;
+}
+
+
+.mr-20 {
+    margin-right: 80px;
+}
+
+// display
+.hidden {
+    display: none;
+}

@@ -1,0 +1,15 @@
+.main {
+    width: 932px;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 100px;
+
+    &-bg-color-div {
+        @include size(932px, 358px);
+        @extend %position-abs;
+        background-image: linear-gradient(72deg, #fe5266 3%, #fe5465 47%, #fd7f54);
+        z-index: -1;
+    }
+
+    @extend %common-h1-h2;
+}

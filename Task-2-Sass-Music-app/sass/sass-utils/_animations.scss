@@ -1,0 +1,19 @@
+@keyframes slideAnimation {
+
+    0%,
+    100% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-600px);
+    }
+}
+
+.slide-animation {
+    animation: slideAnimation 30s linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}

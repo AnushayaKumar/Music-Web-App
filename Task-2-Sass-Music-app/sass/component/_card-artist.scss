@@ -1,0 +1,9 @@
+// artists are group of cards in the home page
+.artist-item {
+    margin: 0 77px 25px 0;
+
+    img {
+        @include size(180px, 180px);
+        border-radius: 100px;
+    }
+}

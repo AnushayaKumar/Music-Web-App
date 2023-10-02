@@ -1,0 +1,30 @@
+// playlists are group of cards in home and bibliotheque page.
+.card-playlist {
+    @include size(485px, 240px);
+    position: relative;
+    color: $gray-lighter;
+    background: url(../../images/playlist-bg1.jpeg) center/cover;
+    border-radius: 20px;
+
+    h2,
+    div {
+        width: 222px;
+    }
+
+    h2 {
+        font-size: $fs-h1;
+        border-right: 2px solid rgba(205, 205, 205, 0.3);
+    }
+
+    div {
+        padding-left: 50px;
+    }
+
+    svg {
+        @include size(50px, 50px);
+        @include position(absolute, $t: 95px, $l: 217px);
+        border-radius: 50px;
+        border: 5px solid rgba(205, 205, 205, 0.6);
+        background-color: white;
+    }
+}

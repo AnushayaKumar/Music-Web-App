@@ -1,0 +1,35 @@
+.tendences-talents-rest {
+    @extend %box-shadow;
+    border-radius: 6px;
+    position: relative;
+    font-size: $fs-13;
+    padding: 10px;
+
+    &-profile {
+        @include position(absolute, $t: -7px, $l: -30px);
+        @include size(100px, 100px);
+        border-radius: 50px;
+    }
+
+    li {
+        padding: 0 10px;
+    }
+
+    h2 {
+        padding-bottom: 0;
+    }
+
+    &-views {
+        @include size(30px, 30px);
+        margin-bottom: 10px;
+    }
+
+    svg {
+        @include size(40px, 40px);
+        @extend %box-shadow;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: white;
+
+    }
+}

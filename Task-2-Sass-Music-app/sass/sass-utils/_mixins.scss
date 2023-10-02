@@ -1,0 +1,9 @@
+@mixin size($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin position($position, $t: auto, $l: auto, $r: auto, $b: auto) {
+    position: $position;
+    inset: $t $r $b $l;
+}

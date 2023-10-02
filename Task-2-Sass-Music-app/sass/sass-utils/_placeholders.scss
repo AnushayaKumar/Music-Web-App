@@ -1,0 +1,18 @@
+%box-shadow {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+%position-abs {
+    @include position(absolute, $t: 0px, $l: 0px);
+}
+
+%common-h1-h2 {
+    h1 {
+        margin: 35px 0 22px 0px;
+        color: $gray-lighter;
+    }
+
+    h2 {
+        padding-bottom: 18px;
+    }
+}

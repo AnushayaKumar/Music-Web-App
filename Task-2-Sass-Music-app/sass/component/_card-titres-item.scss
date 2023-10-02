@@ -1,0 +1,21 @@
+// titres are group of cards in the bibliotheque page.
+.titres-item {
+    position: relative;
+    font-size: $fs-13;
+    @extend %box-shadow;
+    border-radius: 10px;
+
+    img {
+        @include position(absolute, $t: -15px, $l: -20px);
+        @include size(82px, 82px);
+        border-radius: 50px;
+    }
+
+    svg {
+        @include size(40px, 40px);
+        @extend %box-shadow;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: white;
+    }
+}

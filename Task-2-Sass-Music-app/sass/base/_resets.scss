@@ -1,0 +1,41 @@
+/*This file contains resets, normalize, opinionated styling across browsers. */
+
+/* resetting all margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add border box sizing in all browsers (opinionated). */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* Removing text-decoration from anchor tags (opinionated). */
+a {
+    text-decoration: none;
+}
+
+/* Removing list styles (opinionated). */
+li {
+    list-style: none;
+}
+
+/* Removing all buton borders (opinionated) */
+button {
+    border: none;
+}
+
+/* Body is given the width of 1232px and margin auto in the horizontal axis. */
+body {
+    width: 1232px;
+
+    margin: {
+        left: auto;
+        right: auto;
+    }
+
+    font-family:$font-family;
+}

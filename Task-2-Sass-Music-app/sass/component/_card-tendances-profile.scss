@@ -1,0 +1,64 @@
+.tendances-profile {
+    @include size(860px, auto);
+    background-color: $gray-lighter;
+    border-radius: 20px;
+    @extend %box-shadow;
+    position: relative;
+    margin-bottom: 36px;
+
+    &-right-box {
+        @include size(300px, auto);
+    }
+
+    &-img {
+        @include size(100%, 100%);
+        object-fit: cover;
+        border-radius: 0 20px 20px 0;
+    }
+
+    &-h3 {
+        font-size: 32px;
+
+        p {
+            display: inline-block;
+            padding: 8px 24px;
+            @extend %box-shadow;
+            border-radius: 20px;
+            vertical-align: 6px;
+            margin-left: 20px;
+            letter-spacing: 0.4px;
+        }
+    }
+
+    &-h4 {
+        font-size: $fs-h2;
+    }
+
+    &-left-box {
+        @include size(600px, auto);
+
+        ul {
+            padding: 7px 0;
+        }
+    }
+
+    &-count {
+        font-size: $fs-p;
+        color: $primary;
+
+        img {
+            @include size(14px, 15px);
+            vertical-align: -2px;
+        }
+    }
+
+    &-rank {
+        @extend %position-abs;
+        background-color: $gray-lighter;
+        color: $primary;
+        padding: 10px 20px 15px 15px;
+        border-radius: 20px 0px 50px 0px;
+        @extend %box-shadow;
+    }
+
+}

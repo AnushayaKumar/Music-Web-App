@@ -1,0 +1,39 @@
+// talents are a group of cards in home and bibliotheque page.
+.card-talents {
+    @include size(233px, 233px);
+    background: url(../../images/musician-2.jpeg) center/cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+    position: relative;
+    color: $gray-lighter;
+
+    &-heart {
+        @include size(40px, 40px);
+        @include position(absolute, $b: -15px, $l: 70px);
+        @extend %box-shadow;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .black {
+        left: 120px;
+    }
+
+    h2 {
+        @extend %position-abs;
+        background-color: $gray-lighter;
+        color: $primary;
+        padding: 5px 15px 10px 10px;
+        border-radius: 20px 0px 50px 0px;
+    }
+
+    h4 {
+        margin-top: 150px;
+    }
+
+    .star-btn {
+        @include position(absolute, $t: 15px, $r: 15px);
+        background: none;
+    }
+}

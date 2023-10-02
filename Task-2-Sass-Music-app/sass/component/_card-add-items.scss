@@ -1,0 +1,14 @@
+// Add items is a card in the bibliotheque page.
+.add-items {
+    @include size(165px, 240px);
+    @include position(sticky, $t: 0, $l: -50px);
+    @extend %box-shadow;
+    z-index: 2;
+    background-color: $gray-lighter;
+    border-radius: 20px;
+
+    button {
+        @include size(25px, 25px);
+        background-color: $gray-lighter;
+    }
+}
